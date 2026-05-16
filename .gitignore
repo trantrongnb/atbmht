@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.weights
+*.onnx
+*.engine
+
+weights/
+demo_outputs/
+batch_outputs/
+exp/

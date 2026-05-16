@@ -1,0 +1,30 @@
+# Naturalistic Modern YOLO Attack – Python Dependencies
+# Môi trường: conda signclip_310 (Python 3.10)
+#
+# Lưu ý: torch và torchvision đã được cài sẵn trong conda env.
+# Chỉ cài thêm các package bổ sung nếu thiếu.
+
+# Core
+numpy>=1.21.0
+Pillow>=9.0.0
+tqdm>=4.64.0
+scipy>=1.7.0
+
+# YOLO inference (từ NaturalisticAdversarialPatches/ultralytics, không cần cài riêng)
+# ultralytics>=8.0.0  # đã có qua sys.path bridge
+
+# GAN utilities
+tensorboard>=2.10.0
+tensorboardX>=2.5.1
+
+# Visualization & evaluation
+matplotlib>=3.5.0
+opencv-python>=4.6.0
+imageio>=2.22.0
+
+# YAML config support
+pyyaml>=6.0
+
+# Optional: plotting
+seaborn>=0.12.0
+pandas>=1.4.0
