@@ -1,0 +1,302 @@
+[
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001501.png",
+    "clean": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.9111191034317017,
+      "mean_person_conf": 0.6162485629320145
+    },
+    "patched": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.7091570496559143,
+      "mean_person_conf": 0.500825896859169
+    },
+    "score_reduction": 0.20196205377578735,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001504.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.8975397944450378,
+      "mean_person_conf": 0.8975397944450378
+    },
+    "patched": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.6393027305603027,
+      "mean_person_conf": 0.5752197802066803
+    },
+    "score_reduction": 0.2582370638847351,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001511.png",
+    "clean": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.8915490508079529,
+      "mean_person_conf": 0.8776250779628754
+    },
+    "patched": {
+      "person_count_above_threshold": 3,
+      "max_person_conf": 0.7538023591041565,
+      "mean_person_conf": 0.6011452476183573
+    },
+    "score_reduction": 0.1377466917037964,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001512.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.8997229933738708,
+      "mean_person_conf": 0.8997229933738708
+    },
+    "patched": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.7115569710731506,
+      "mean_person_conf": 0.687753438949585
+    },
+    "score_reduction": 0.18816602230072021,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001514.png",
+    "clean": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.9234263300895691,
+      "mean_person_conf": 0.902346670627594
+    },
+    "patched": {
+      "person_count_above_threshold": 4,
+      "max_person_conf": 0.8751028180122375,
+      "mean_person_conf": 0.6944385021924973
+    },
+    "score_reduction": 0.04832351207733154,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001520.png",
+    "clean": {
+      "person_count_above_threshold": 4,
+      "max_person_conf": 0.9418540596961975,
+      "mean_person_conf": 0.6145204454660416
+    },
+    "patched": {
+      "person_count_above_threshold": 5,
+      "max_person_conf": 0.8175312280654907,
+      "mean_person_conf": 0.5456468462944031
+    },
+    "score_reduction": 0.12432283163070679,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001521.png",
+    "clean": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.9299037456512451,
+      "mean_person_conf": 0.8937962353229523
+    },
+    "patched": {
+      "person_count_above_threshold": 4,
+      "max_person_conf": 0.8508254289627075,
+      "mean_person_conf": 0.5591884925961494
+    },
+    "score_reduction": 0.0790783166885376,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001522.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.4535812735557556,
+      "mean_person_conf": 0.4535812735557556
+    },
+    "patched": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.7551222443580627,
+      "mean_person_conf": 0.7551222443580627
+    },
+    "score_reduction": -0.30154097080230713,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001531.png",
+    "clean": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.8744938969612122,
+      "mean_person_conf": 0.833267480134964
+    },
+    "patched": {
+      "person_count_above_threshold": 3,
+      "max_person_conf": 0.7638490200042725,
+      "mean_person_conf": 0.740343709786733
+    },
+    "score_reduction": 0.1106448769569397,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001533.png",
+    "clean": {
+      "person_count_above_threshold": 5,
+      "max_person_conf": 0.7954655885696411,
+      "mean_person_conf": 0.5156749904155731
+    },
+    "patched": {
+      "person_count_above_threshold": 5,
+      "max_person_conf": 0.8433807492256165,
+      "mean_person_conf": 0.5360224068164825
+    },
+    "score_reduction": -0.04791516065597534,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001544.png",
+    "clean": {
+      "person_count_above_threshold": 5,
+      "max_person_conf": 0.9025636315345764,
+      "mean_person_conf": 0.6792099893093109
+    },
+    "patched": {
+      "person_count_above_threshold": 5,
+      "max_person_conf": 0.8162240386009216,
+      "mean_person_conf": 0.564848667383194
+    },
+    "score_reduction": 0.08633959293365479,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001545.png",
+    "clean": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.8533937335014343,
+      "mean_person_conf": 0.8245613276958466
+    },
+    "patched": {
+      "person_count_above_threshold": 4,
+      "max_person_conf": 0.7474746704101562,
+      "mean_person_conf": 0.5143330171704292
+    },
+    "score_reduction": 0.10591906309127808,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001546.png",
+    "clean": {
+      "person_count_above_threshold": 6,
+      "max_person_conf": 0.9404101371765137,
+      "mean_person_conf": 0.6088536481062571
+    },
+    "patched": {
+      "person_count_above_threshold": 8,
+      "max_person_conf": 0.723615288734436,
+      "mean_person_conf": 0.4434802234172821
+    },
+    "score_reduction": 0.21679484844207764,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001549.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.892762303352356,
+      "mean_person_conf": 0.892762303352356
+    },
+    "patched": {
+      "person_count_above_threshold": 3,
+      "max_person_conf": 0.501774787902832,
+      "mean_person_conf": 0.3721684515476227
+    },
+    "score_reduction": 0.3909875154495239,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001555.png",
+    "clean": {
+      "person_count_above_threshold": 5,
+      "max_person_conf": 0.8768594861030579,
+      "mean_person_conf": 0.6341638147830964
+    },
+    "patched": {
+      "person_count_above_threshold": 5,
+      "max_person_conf": 0.7450193762779236,
+      "mean_person_conf": 0.6134113252162934
+    },
+    "score_reduction": 0.13184010982513428,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001566.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.8958529233932495,
+      "mean_person_conf": 0.8958529233932495
+    },
+    "patched": {
+      "person_count_above_threshold": 3,
+      "max_person_conf": 0.6351976990699768,
+      "mean_person_conf": 0.5353202819824219
+    },
+    "score_reduction": 0.2606552243232727,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001573.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.9200594425201416,
+      "mean_person_conf": 0.9200594425201416
+    },
+    "patched": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.35000187158584595,
+      "mean_person_conf": 0.32494528591632843
+    },
+    "score_reduction": 0.5700575709342957,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001574.png",
+    "clean": {
+      "person_count_above_threshold": 3,
+      "max_person_conf": 0.7444974780082703,
+      "mean_person_conf": 0.5162473817666372
+    },
+    "patched": {
+      "person_count_above_threshold": 3,
+      "max_person_conf": 0.7022643685340881,
+      "mean_person_conf": 0.48945775628089905
+    },
+    "score_reduction": 0.04223310947418213,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001590.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.9142609238624573,
+      "mean_person_conf": 0.9142609238624573
+    },
+    "patched": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.7825534343719482,
+      "mean_person_conf": 0.575942188501358
+    },
+    "score_reduction": 0.13170748949050903,
+    "fooled_zero_person": false
+  },
+  {
+    "image": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/crop001593.png",
+    "clean": {
+      "person_count_above_threshold": 1,
+      "max_person_conf": 0.9017249941825867,
+      "mean_person_conf": 0.9017249941825867
+    },
+    "patched": {
+      "person_count_above_threshold": 2,
+      "max_person_conf": 0.6596486568450928,
+      "mean_person_conf": 0.5296528190374374
+    },
+    "score_reduction": 0.2420763373374939,
+    "fooled_zero_person": false
+  }
+]

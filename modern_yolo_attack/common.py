@@ -36,6 +36,7 @@ MODEL_CHOICES = (
     "yolov8m",
     "yolov8l",
     # YOLOv9
+    "yolov9n",
     "yolov9t",
     "yolov9s",
     "yolov9m",
@@ -54,6 +55,7 @@ MODEL_ASSET_MAP = {
     "yolov8m": "yolov8m.pt",
     "yolov8l": "yolov8l.pt",
     # YOLOv9 (ultralytics-packaged)
+    "yolov9n": "yolov9t.pt",
     "yolov9t": "yolov9t.pt",
     "yolov9s": "yolov9s.pt",
     "yolov9m": "yolov9m.pt",
