@@ -288,6 +288,9 @@ def build_patch_preview(
             return torch.clamp(
                 (generator(latent_clamped.unsqueeze(0)) + 1) * 0.5, 0.0, 1.0
             )
+        elif args.generator_mode == "diffusion":
+            # latent_shift here refers to latent_noise
+            return generator.forward(latent_shift)
         return torch.clamp(raw_patch, 0.0, 1.0).unsqueeze(0)
 
 
@@ -310,6 +313,9 @@ def build_checkpoint_data(
     if args.generator_mode == "biggan":
         checkpoint_data["latent_shift"] = latent_shift.detach().cpu()
         checkpoint_data["class_biggan"] = args.class_biggan
+    elif args.generator_mode == "diffusion":
+        checkpoint_data["latent_noise"] = latent_shift.detach().cpu()
+        checkpoint_data["diffusion_prompt"] = args.diffusion_prompt
     else:
         checkpoint_data["raw_patch"] = raw_patch.detach().cpu()
     return checkpoint_data
@@ -706,8 +712,8 @@ def main() -> None:
 
     # Generator
     parser.add_argument(
-        "--generator-mode", choices=("biggan", "raw"), default="biggan",
-        help="biggan: tối ưu latent vector của BigGAN; raw: tối ưu pixel trực tiếp",
+        "--generator-mode", choices=("biggan", "raw", "diffusion"), default="biggan",
+        help="biggan: tối ưu latent vector của BigGAN; raw: tối ưu pixel trực tiếp; diffusion: tối ưu latent noise của SDXL",
     )
     parser.add_argument(
         "--class-biggan", type=int, default=259,
@@ -715,6 +721,11 @@ def main() -> None:
     )
     parser.add_argument("--latent-clip", type=float, default=3.0)
     parser.add_argument("--raw-patch-size", type=int, default=128)
+    
+    # Diffusion
+    parser.add_argument("--diffusion-model", default="stabilityai/sdxl-turbo")
+    parser.add_argument("--diffusion-prompt", default="a colorful abstract painting")
+    parser.add_argument("--diffusion-patch-size", type=int, default=128)
 
     # Model(s) – hỗ trợ một hoặc nhiều model cho ensemble
     parser.add_argument(
@@ -889,7 +900,17 @@ def main() -> None:
         optimizer = torch.optim.Adam(
             [latent_shift], lr=args.learning_rate, betas=(0.9, 0.999), amsgrad=True
         )
+    elif args.generator_mode == "diffusion":
+        from .diffusion_generator import DiffusionPatchGenerator
+        generator = DiffusionPatchGenerator(args.diffusion_model, device, args.diffusion_prompt, args.diffusion_patch_size)
+        latent_shift = generator.init_latent().requires_grad_(True) # latent_shift is used as latent_noise
+        raw_patch = None
+        optimizer = torch.optim.Adam(
+            [latent_shift], lr=args.learning_rate, betas=(0.9, 0.999), amsgrad=True
+        )
     else:
+        generator = None
+        latent_shift = None
         raw_patch = torch.rand(
             (3, args.raw_patch_size, args.raw_patch_size), device=device
         ).requires_grad_(True)
@@ -905,6 +926,8 @@ def main() -> None:
         ckpt = torch.load(str(args.resume), map_location=device)
         if args.generator_mode == "biggan" and "latent_shift" in ckpt:
             latent_shift.data.copy_(ckpt["latent_shift"].to(device))
+        elif args.generator_mode == "diffusion" and "latent_noise" in ckpt:
+            latent_shift.data.copy_(ckpt["latent_noise"].to(device))
         elif args.generator_mode == "raw" and "raw_patch" in ckpt:
             raw_patch.data.copy_(ckpt["raw_patch"].to(device))
         if "optimizer" in ckpt:
@@ -999,6 +1022,9 @@ def main() -> None:
                 with torch.enable_grad():
                     fake_images = generator(latent.unsqueeze(0))
                 fake_images = torch.clamp((fake_images + 1) * 0.5, 0.0, 1.0)
+            elif args.generator_mode == "diffusion":
+                with torch.enable_grad():
+                    fake_images = generator.forward(latent_shift)
             else:
                 fake_images = torch.clamp(raw_patch, 0.0, 1.0).unsqueeze(0)
 

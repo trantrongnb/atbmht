@@ -1,0 +1,32 @@
+{
+  "yolov8n": {
+    "model": "yolov8n",
+    "weights": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/weights/yolov8n.pt",
+    "precision": 0.5873889255620091,
+    "recall": 0.949068989727029,
+    "ap50": 0.6974471776133688,
+    "ap50_95": 0.45469311727104494,
+    "images": 64,
+    "instances": 129
+  },
+  "yolov9n": {
+    "model": "yolov9n",
+    "weights": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/weights/yolov9t.pt",
+    "precision": 0.6221050837710866,
+    "recall": 0.8677867988035124,
+    "ap50": 0.710174500618351,
+    "ap50_95": 0.46729040339885575,
+    "images": 64,
+    "instances": 129
+  },
+  "yolov10n": {
+    "model": "yolov10n",
+    "weights": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/weights/yolov10n.pt",
+    "precision": 0.6025533262118338,
+    "recall": 0.8914728682170543,
+    "ap50": 0.6945617293114378,
+    "ap50_95": 0.4457561916723026,
+    "images": 64,
+    "instances": 129
+  }
+}

@@ -1,0 +1,14 @@
+ĐÁNH GIÁ HIỆU NĂNG TẤN CÔNG ADVERSARIAL PATCH (BẢN RÚT GỌN)
+============================================================
+
+Bảng tổng hợp độ chính xác (mAP còn lại) của 3 mô hình YOLO:
+
+| Kích thước (Scale) & Phương pháp       | YOLOv8n | YOLOv9n | YOLOv10n |
+|----------------------------------------|---------|---------|----------|
+| Scale 0.22 (Tấn công bởi Patch_tot_nhat)       | 31.27%  | 41.30%  | 24.51%   |
+| Scale 0.25 (Tấn công bởi Path_totnhat)      | 23.40%  | 39.97%  | 28.62%   |
+
+------------------------------------------------------------
+Ghi chú:
+- Số liệu thể hiện tỷ lệ mAP (%) còn lại của mô hình sau khi bị tấn công.
+- Tỷ lệ % càng thấp chứng tỏ phương pháp tấn công càng hiệu quả (mô hình càng yếu).

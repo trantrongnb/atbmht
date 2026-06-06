@@ -1,0 +1,15 @@
+{
+  "model": "yolov8n",
+  "baseline": "learned",
+  "patch": "exp/yolov8n_biggan_ap/generated/patch-best.png",
+  "weights": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/weights/yolov8n.pt",
+  "split": "Test",
+  "label_dir": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/dataset/inria/Test/pos/yolo-labels_modern_gt",
+  "num_images_tested": 50,
+  "num_images_reduced_score": 46,
+  "num_images_fooled_zero_person": 0,
+  "mean_clean_max_person_score": 0.8724625539779663,
+  "mean_patched_max_person_score": 0.7569154286384583,
+  "mean_score_reduction": 0.11554712533950806,
+  "output_dir": "/home/iec/disk2/TrongTV/atbmht/Naturalistic-Modern-YOLO-Attack/batch_outputs/yolov8n_patch-best_test_50"
+}
